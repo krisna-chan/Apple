@@ -1,0 +1,187 @@
+
+*,
+*::before,
+
+*::after{
+    margin: 0 ;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2,2rem ;
+}
+header{
+    font-weight: 20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1400;
+    height: 4.4rem;
+    background-color: rgba(0,0,0,.8);
+    backdrop-filter: blur(2rem);
+}
+
+
+.navi-list{
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.navi-list-mobile{
+    display: none;
+}
+
+.navi-link{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity .5s;
+}
+
+.navi-link:hover{
+    opacity: .7;
+}
+
+.navi-link-apple{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("/applelogo.953ce47d.svg") start no-repeat;
+}
+
+#search-bar{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: src = "../assets/search.svg" ,  start no-repeat;
+
+}
+#bag-bar{
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url('/bag.2785b218.svg') start no-repeat;
+}
+
+.iphone-15-Pro{
+    /* background: url('../pictures-large/hero_iphone15pro__large.jpeg'); */
+    background: url('/hero_iphone15pro_small.c3a64dca.jpg');
+    margin-top: 4.4rem;
+}
+.hero{
+    height: 69.2rem;
+    background-size: auto 73.6rem;
+    position: start;
+    background-repeat: no-repeat;
+    border-top:.6rem solid #ffffff;
+    border-bottom: .6rem solid #fff;
+
+}
+.iphone-15-Pro{
+    border-top:none;
+}
+.title{
+    color:#ffffff;
+    text-align: start;
+    padding-top: 5.5rem;
+}
+
+.heading{
+    font-size: 5.6rem;
+    line-height: 1.07143;
+    letter-spacing: -.005rem;
+}
+.subheading{
+    color: #ffffff;
+    font-size: 2.65rem;
+    margin-top: .6rem;
+    letter-spacing: .008rem;
+    font-weight: 400;
+}
+
+.cta{
+    text-align: start;
+    margin-top: 1.8rem;
+}
+.cta-link{
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+.cta-link:nth-child(2){
+    margin-left: 2.6rem;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: start;
+  }
+  
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-col {
+    flex-basis: 25%;
+  }
+  
+  .footer-col h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-col a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-col a:hover {
+    color: #000;
+  }
+  
+
+  .footer-header{
+    font-size:13px;
+  }
+  footer{
+    padding:20px;
+    margin:20px;
+  }
+  
+  /* .footer-box{
+      display: none;
+  } */
+    .accordion{
+        display: none;
+    }
+  @media screen and (max-width: 768px){
+    .accordion{
+        display: block;
+    }
+    .container-footer{
+        display: none;
+    }
+}
+
+/*# sourceMappingURL=/custom.496964ab.css.map */

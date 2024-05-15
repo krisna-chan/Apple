@@ -1,0 +1,118 @@
+
+* {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+ul{
+    list-style: none;
+}
+
+    h3{
+        font-size: 20px;
+    }
+    .trade{
+        padding : 20px
+    }
+    .price{
+        padding-top: 10px;
+        border-bottom: 1px solid #d7d7d79c;
+    }
+    .btn-container{
+        padding-top: 10px;
+    }
+
+    .breadcrumb{
+        font-weight: 500;
+    }
+
+    .card-body{
+        margin-right: 5px;
+    }
+
+    @media screen and (max-width : 740px) {
+        
+    }
+    .col{
+        h2{
+            color: white;
+        }
+        p{
+            color:white;
+        }
+    }
+    .card{
+        border-radius: 10px !important;
+    }
+
+    .header-container{
+        .logo{
+            width: 100px;
+        }
+        
+}
+
+.hidden{
+    display:none !important;
+}
+
+li{
+    a{
+        text-decoration: none;
+        text-align: center;
+        color: black;
+    }
+}
+.trade-section{
+    display: block;
+    
+    .trade-item{
+        margin: auto;
+    }
+    .img-container{
+        margin: auto;
+    }
+}
+.title * {
+    font-size: 2rem;
+}
+.price *{
+    font-size: 1.2rem;
+}
+#refund-content{
+    img{
+        width: auto;
+        
+    }
+}
+/* ========Media query ================*/
+
+@media screen and (max-width: 740px) {
+    .trade-section{
+        flex-direction:column-reverse;
+        img{
+            width: 400px;
+        }
+
+
+    }
+}
+@media screen and (max-width: 430px) {
+    .trade-section{
+        img{
+            width: 230px;
+        }
+
+    }
+}
+
+.hidden-card{
+    display: none !important;
+}
+
+.nav{
+    font-size: 1rem !important;
+}
+
+
+/*# sourceMappingURL=/trading.e38c7fb7.css.map */

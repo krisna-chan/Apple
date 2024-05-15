@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+<super-header>
+    <header id="header"></header>
+    <div
+    class="subheader sticky-top d-flex"
+    style="justify-content: space-between"
+    >
+    <div class="preview">
+        <h2>Mac App Store Preview</h2>
+    </div>
+
+    <div class="apple-arcade d-flex">
+        <div class="arcade-title">
+        <p style="margin: 0">Apple Arcade</p>
+        <p style="color: #0070c9;">Try it Free*</p>
+        </div>
+        <div class="arcade-logo" style="width: 20px">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 21 20"
+            class="we-artwork__image"
+            aria-hidden="true"
+        >
+            <defs>
+            <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FF7355"></stop>
+                <stop offset="100%" stop-color="#FF2D69"></stop>
+            </linearGradient>
+            </defs>
+            <path
+            fill="url(#a)"
+            fill-rule="evenodd"
+            d="M10.5 0c1.61 0 2.917 1.339 2.917 2.99 0 1.651-1.307 2.99-2.917 2.99-1.61 0-2.917-1.339-2.917-2.99C7.583 1.339 8.89 0 10.5 0zM3.07 11.048c-.597.341-.592.896.008 1.238.6.341 1.567.341 2.164 0 .596-.342.594-.897-.006-1.238-.601-.342-1.57-.342-2.167 0zm16.521 1.948l-6.114 2.833c-.974.437-1.828.65-2.981.65a7.046 7.046 0 01-2.974-.65l-6.114-2.833C.884 12.742 0 12.316 0 11.624c0-.694.9-1.13 1.408-1.372l6.114-2.82a7.133 7.133 0 011.923-.565v4.93c0 .47.472.783 1.057.783.583 0 1.056-.307 1.056-.782V6.854c.668.095 1.268.285 1.919.578l6.114 2.82c.508.242 1.409.678 1.409 1.372 0 .692-.885 1.118-1.409 1.372zm-5.745 6.157c-1.257.59-2.11.826-3.342.826a6.833 6.833 0 01-2.975-.659c-.669-.309-5.499-2.561-6.121-2.864-.785-.382-1.068-.635-1.236-.872A.939.939 0 010 15.066v-.868s0-.516.49-.283c0 0 6.234 2.917 7.032 3.288.839.39 1.82.66 2.974.66 1.153 0 2.007-.216 2.98-.66.975-.445 7.034-3.288 7.034-3.288.49-.233.49.283.49.283v.868a.905.905 0 01-.172.515c-.21.283-.447.484-1.237.873-.627.31-4.49 2.106-5.745 2.699z"
+            ></path>
+        </svg>
+        </div>
+    </div>
+    </div>
+</super-header>
+
+<!-- content introductions -->
+<section class="container game-ad d-flex">
+    <div class="content-title">
+    <div class="arcade-logo">
+        <svg
+        style="width: 50px"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 80"
+        preserveAspectRatio="xMinYMin meet"
+        >
+        <path
+            fill="#fff"
+            d="M43.873 12.699C46.606 9.28 48.461 4.69 47.972 0c-4.001.199-8.883 2.64-11.71 6.06-2.538 2.93-4.784 7.712-4.198 12.206 4.49.39 8.978-2.245 11.81-5.567M47.92 19.144c-6.521-.389-12.067 3.701-15.182 3.701-3.116 0-7.885-3.506-13.044-3.411-6.714.098-12.945 3.895-16.352 9.933-7.008 12.079-1.85 29.996 4.966 39.833 3.31 4.867 7.298 10.226 12.553 10.034 4.966-.195 6.912-3.216 12.948-3.216 6.032 0 7.785 3.216 13.041 3.118 5.451-.097 8.859-4.869 12.168-9.74 3.797-5.549 5.351-10.906 5.449-11.2-.098-.097-10.511-4.092-10.608-16.07-.098-10.03 8.176-14.801 8.565-15.097-4.672-6.91-11.972-7.69-14.503-7.885"
+        />
+        <path
+            fill="#fff"
+            d="M115.598 58.881H87.752L81.07 78.627H69.273L95.651 5.569h12.252l26.377 73.058h-12l-6.682-19.746zm-24.96-9.113h22.074L101.827 17.72h-.304L90.638 49.768zM140.503 25.365h10.43v9.062h.253c1.773-6.226 6.531-9.923 12.81-9.923 1.569 0 2.936.253 3.746.406v10.175c-.86-.354-2.784-.607-4.911-.607-7.038 0-11.391 4.71-11.391 12.252v31.897h-10.937V25.365zM207.744 43.693c-1.114-5.671-5.367-10.177-12.505-10.177-8.455 0-14.025 7.037-14.025 18.48 0 11.695 5.62 18.48 14.126 18.48 6.734 0 11.138-3.696 12.404-9.873h10.53c-1.164 11.34-10.227 19.036-23.035 19.036-15.24 0-25.162-10.43-25.162-27.643 0-16.91 9.923-27.593 25.06-27.593 13.72 0 22.074 8.81 23.036 19.29h-10.43zM223.9 63.489c0-9.317 7.14-15.037 19.797-15.746l14.58-.86v-4.101c0-5.924-4-9.468-10.682-9.468-6.329 0-10.278 3.037-11.24 7.797h-10.328c.607-9.62 8.81-16.708 21.973-16.708 12.91 0 21.163 6.835 21.163 17.517v36.707h-10.48v-8.76h-.254c-3.088 5.925-9.821 9.67-16.808 9.67-10.43 0-17.72-6.48-17.72-16.048zm34.378-4.81v-4.202l-13.113.81c-6.532.456-10.227 3.341-10.227 7.898 0 4.657 3.848 7.695 9.72 7.695 7.645 0 13.62-5.265 13.62-12.2zM276.853 51.996c0-16.809 8.91-27.492 22.276-27.492 7.645 0 13.721 3.848 16.707 9.721h.204V5.57h10.986v73.058h-10.632v-9.063h-.203c-3.139 6.075-9.214 9.974-16.96 9.974-13.468 0-22.378-10.734-22.378-27.542zm11.189 0c0 11.239 5.417 18.277 14.075 18.277 8.404 0 14.023-7.139 14.023-18.277 0-11.037-5.619-18.277-14.023-18.277-8.658 0-14.075 7.088-14.075 18.277zM382.956 62.982c-1.519 9.72-10.734 16.657-22.935 16.657-15.644 0-25.111-10.58-25.111-27.39 0-16.707 9.619-27.846 24.656-27.846 14.783 0 23.997 10.43 23.997 26.58v3.747h-37.616v.658c0 9.265 5.568 15.39 14.327 15.39 6.228 0 10.835-3.138 12.303-7.796h10.379zm-36.96-15.897h26.631c-.252-8.15-5.417-13.873-13.061-13.873-7.646 0-13.012 5.823-13.57 13.873z"
+        />
+        </svg>
+    </div>
+    <h4>
+        Play over 200 games. <br />
+        No ads. No in-app purchases.
+    </h4>
+    <a href="">Try it Free* ↗</a>
+    </div>
+</section>
+
+<!-- banner -->
+
+<div class="container content-banner my-5 p-2">
+    <p class="m-auto">Open the Mac App Store to buy and download apps.</p>
+</div>
+
+<!-- 2k games -->
+
+<section class="container game-info d-flex">
+    <div class="game-icon">
+    <img
+        src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/f2/0d/3a/f20d3adc-f42d-1826-0249-2c4564794d3d/AppIcon-85-220-4-2x.png/246x0w.webp"
+        alt=""
+    />
+    </div>
+    <div class="game-title">
+    <h3>Apple Arcade</h3>
+    <h2>NBA 2K24 Arcade Edition 4+</h2>
+    <h2 style="color: gray">Your Court, Your Way</h2>
+    <a href="">2K</a>
+
+    <button class="appstore-button">View in Mac App Store ↗</button>
+    </div>
+</section>
+
+<!-- screenshots -->
+<section class="container screenshoots">
+    <div class="title">
+    <h4>Screenshots</h4>
+    </div>
+    <div class="screenshots-container">
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/cc/4e/d8/cc4ed85a-7ef3-054e-ebef-10af337eac38/8326179d-1059-40b6-af56-aa2a6b0789e9_NBA2k24_ARCADE-ASO-SCREENSHOTS-1A-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/c9/76/2b/c9762bab-ad8e-3c9a-d52e-4ea6b3ac78a1/e396a03f-6343-440e-bfa2-cb7f30c73615_NBA2k24_ARCADE-ASO-SCREENSHOTS-1B-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/8b/c3/e8/8bc3e81f-5709-bec7-0387-eb1b8435dca8/d1cad350-b928-4dab-86f0-f83d58066a96_NBA2k24_ARCADE-ASO-SCREENSHOTS-2-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/fd/7d/1e/fd7d1e44-1c3c-5009-6d2e-838f234d315d/2a1412ea-c30b-4630-98ca-b37c0e8e5f27_NBA2k24_ARCADE-ASO-SCREENSHOTS-3-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/d9/a6/97/d9a697a4-5598-18f0-76da-f922e178c960/7045bebe-1d03-423f-8603-a02afcbe933f_NBA2k24_ARCADE-ASO-SCREENSHOTS-4-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/9e/dd/9b/9edd9b2e-60df-d25a-9089-5514bbd7c1a0/3f08e1c3-f477-435a-b60e-338715a0b2b0_NBA2k24_ARCADE-ASO-SCREENSHOTS-5-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/97/1c/61/971c6191-ed07-1a64-56e3-9e0045b4ead9/a2d6c262-b91b-41e7-ac85-d7a6d3f067cf_NBA2k24_ARCADE-ASO-SCREENSHOTS-6-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/68/4f/ce/684fce34-cb8c-00dd-6aef-8f59f2e5a87e/1686d567-bb89-4b49-b00a-0e0a665bc20b_NBA2k24_ARCADE-ASO-SCREENSHOTS-8-EN-SDW-2880X1800.png/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/b1/61/fc/b161fcb8-3f29-84cd-72a5-f76601644f54/3eb61fb8-4341-4ad1-96d3-1168bb5e4852_NBA2k24_ARCADE-ASO-SCREENSHOTS-10-EN-SDW-2880X1800.jpg/643x0w.webp"
+        alt=""
+    />
+    <img
+        class="screen"
+        src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/41/46/da/4146dab0-4bdb-ce6e-a987-024c7d96e090/fbfb638d-900c-495b-871e-47821bace6d6_NBA2k24_ARCADE-ASO-SCREENSHOTS-11-EN-SDW-2732X2048.jpg/643x0w.webp"
+        alt=""
+    />
+    </div>
+</section>
+
+<section class="container read-more">
+    <p>
+    Enjoy new ways to play at home and on the go with the latest installment
+    of the world-renowned NBA 2K franchise, exclusively available on Apple
+    Arcade! Step into the shoes of your very own NBA Superstar with
+    MyCAREER, play games to earn fans and unlock endorsements with iconic
+    brands such as Nike, Jordan,
+    <span id="dots">...</span
+    ><span id="more"
+        >or Adidas.Unlock NBA Legends to join your streetball squad and take
+        on the AI and earn VCs that you can use to unlock new shoes,
+        accessories, outfits, and tattoos for the first time on Apple Arcade.
+        Challenge new GOATs in the Greatest mode and unlock a whole new lineup
+        of NBA Superstars and Legends. Build the team of your wildest dreams
+        and take on other GOAT squads in the ultimate showdown with the
+        greatest fantasy team challenge. Think you've got what it takes to
+        call the shots? Put your head coach skills to the test in Association
+        mode with SimCast Live. Oversee your team's strategy and lead your NBA
+        franchise to victory! Sit courtside with Spectator mode, or play games
+        matching the NBA season with NBA Today. And here's the kicker – it's
+        not just about the game; it's also about your style! You can now
+        customize your indoor MyCOURT, hone your skills, and then invite your
+        friends via Game Center to witness your greatness! Looking for more
+        reason to jump in NBA 2K24 Arcade Edition? We got you covered: -
+        MyCAREER: Start your NBA journey, from a young rookie to an NBA
+        legend. Create your player and choose physical characteristics like
+        height, wingspan, weight, playstyle, & more Choose your position and
+        play on your favorite NBA team. Modify your stats and build - The
+        Association: Become the GM and Head Coach of your favorite NBA
+        Franchise and build your NBA dream team in The Association. Manage
+        your NBA roster and make trades, sign free agents, scout up-and-coming
+        prospects, and control your team’s finances. - Quick Match Modes: Test
+        your skill with authentic basketball gameplay, pick your favorite NBA
+        team and play against rivals from around the NBA in 5v5 basketball
+        games. Select your favorite players and play street basketball in 1v1,
+        3v3, or 5v5 on blacktop court. - Online Multiplayer Mode: Choose one
+        of the 30 NBA teams and compete real-time head-to-head with a friend
+        in 3v3 street basketball in Blacktop mode against a friend. -
+        Cross-Platform Gameplay: Play on your own or against friends via
+        iCloud–on your iPhone, iPad, Mac, or Apple TV. - Compatibility with
+        Xbox or PS DualShock controllers. NBA 2K24 Arcade Edition is the
+        authentic Apple Arcade experience for the NBA 2K basketball game. Do
+        Not Sell My Personal Information:
+        https://www.take2games.com/ccpa</span
+    >
+    </p>
+    <button
+    style="background-color: white; border: none; color: #0070c9"
+    onclick="myFunction()"
+    id="myBtn"
+    >
+    more
+    </button>
+</section>
+
+<section class="container whats-new">
+    <div
+    class="title-paragraph d-flex"
+    style="justify-content: space-between"
+    >
+    <div class="title">
+        <h3>What's New</h3>
+    </div>
+    <!-- Scrollable modal -->
+    <!-- Scrollable modal -->
+    <!-- Button trigger modal -->
+    <button
+        type="button"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        style="color: #0070c9;"
+        data-bs-backdrop="static"
+    >
+        Version History
+    </button>
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 20px;">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Version History
+            </h1>
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+            ></button>
+            </div>
+            <div class="modal-body">
+            <p>
+                The latest update brings you SimCast Live, introduces new
+                ranks and rewards for MyCOURT 3v3 PVP, showcases fresh
+                All-Star gear in MyCAREER, bug fixes, updates the roster, and
+                unveils 8 additional "Greatest of All-Time" NBA players,
+                featuring Shaquille O'Neal, Joel Embiid, Michael Jordan,
+                Donovan Mitchell, Penny Hardaway, Tyrese Haliburton, David
+                Robinson, and Domantas Sabonis.
+            </p>
+            <p style="border-top: 1px solid #d6d6d6;">
+                Update includes MyCOURT 3v3 PVP, updated roster, new City Edition uniforms, 
+                new endorsements and gears in MyCAREER, bug fixes, and the release of 8 more "Greatest of All-Time" NBA players including Allen Iverson, Lebron James, Giannis Antetokounmpo, Jerry West, 
+                Dominique Wilkins, DeMar DeRozan, Luka Dončić, and Dikembe Mutombo.
+            </p>
+            <p  style="border-top: 1px solid #d6d6d6;">
+                Celebrating 25 years of NBA 2K, NBA 2K24 Arcade Edition pays tribute to where it all began -- Allen Iverson, NBA 2K’s very first cover athlete when the franchise launched in 1999, is back to lead us into a new era of basketball gaming. This year’s installment offers more ways for fans to play with all-new modes like the Endorsement, new ways to express themselves with MyPLAYER and MyCOURT customizations, legendary showdowns with the greatest fantasy team challenge, and so much more.
+            </p>
+            <p  style="border-top: 1px solid #d6d6d6;">
+                Celebrating 25 years of NBA 2K, NBA 2K24 Arcade Edition pays tribute to where it all began -- Allen Iverson, NBA 2K’s very first cover athlete when the franchise launched in 1999, is back to lead us into a new era of basketball gaming. This year’s installment offers more ways for fans to play with all-new modes like the Endorsement, new ways to express themselves with MyPLAYER and MyCOURT customizations, legendary showdowns with the greatest fantasy team challenge, and so much more.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="context d-flex" style="justify-content: space-between;">
+        <div class="paragraph">
+            <p style="max-width:513px ; font-size: 0.8rem;">The latest update brings you SimCast Live, introduces new ranks and rewards for MyCOURT 3v3 PVP, showcases fresh All-Star gear in MyCAREER, bug fixes, updates the roster, and unveils 8 additional "Greatest of All-Time" NBA players, featuring Shaquille O'Neal, Joel Embiid, Michael Jordan, Donovan Mitchell, Penny Hardaway, Tyrese Haliburton, David Robinson, and Domantas Sabonis.</p>
+        </div>
+        <div class="version">
+            <p>Version 1.2</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="container App-Privacy">
+    <div
+    class="title-paragraph d-flex"
+    style="justify-content: space-between"
+    >
+    <div class="title">
+        <h3>App Privacy</h3>
+    </div>
+    <!-- Scrollable modal -->
+    <!-- Scrollable modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal-privacy" style="color: #0070c9;">
+        See details
+    </button>
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="exampleModal-privacy"
+        tabindex="-1"
+        aria-labelledby="exampleModal"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+    >
+        <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 20px;">
+            <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLabel">
+                App Privacy
+            </h1>
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+            ></button>
+            </div>
+            <div class="modal-body">
+            <p>
+                The developer, 2K, indicated that the app’s privacy practices may include handling of data as described below. This information has not been verified by Apple. For more information, see the developer’s privacy policy.
+            </p>
+            <p style="border-top: 1px solid #d6d6d6;">
+                To help you better understand the developer’s responses, see Privacy Definitions and Examples.
+                <br>
+                Privacy practices may vary, for example, based on the features you use or your age. <span class="more"> Learn More</span> 
+            </p>
+            <div class="alert-content privacy d-flex">
+
+                <div class="profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><path d="M7.36 17l3.208 3.208A24.23 24.23 0 007.39 32.235c0 13.44 10.93 24.374 24.366 24.374 4.374 0 8.483-1.159 12.035-3.186L47 56.631A28.616 28.616 0 0131.756 61C15.874 61 3 48.122 3 32.235A28.637 28.637 0 017.36 17zM9.77 6.642l47.588 47.606a2.204 2.204 0 010 3.11 2.206 2.206 0 01-3.111 0L6.632 9.753c-.829-.8-.856-2.283 0-3.11.826-.828 2.253-.886 3.138 0zM32.238 3C48.123 3 61 15.878 61 31.761c0 5.597-1.599 10.82-4.364 15.239l-3.208-3.209a24.221 24.221 0 003.182-12.03c0-13.437-10.934-24.37-24.372-24.37a24.223 24.223 0 00-12.03 3.18L17 7.363A28.628 28.628 0 0132.238 3zm-7.492 31L36 45H18.373C17.44 45 17 44.418 17 43.572c0-2.224 2.5-7.11 7.746-9.572zm6.915-20C35.733 14 39 17.634 39 22.002c0 2.419-.874 4.529-2.281 5.998L26 16.923C27.343 15.145 29.376 14 31.661 14z"></path></svg>
+                </div>
+                <div class="data-state">
+                    <h3>Data Not Linked to You</h3>
+                </div>
+                <div class="paragraph">
+                    <p>The following data, which may be collected but is not linked to your identity, may be used for following purposes: </p>
+                </div>
+            </div>
+            <div class="alert-content analytics">
+                <div class="title">
+                    <h5>Analytics</h5>
+                </div>
+                <div class="info-wrapper d-flex">
+                    <div class="data-logo">
+                        <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" class="privacy-type__glyph privacy-type__glyph--usage-data" aria-hidden="true"><path d="M49.925 53.844h7.098c3.287 0 4.978-1.572 4.978-4.692V14.52c0-3.12-1.69-4.717-4.978-4.717h-7.098c-3.239 0-4.93 1.596-4.93 4.717v34.632c0 3.12 1.691 4.692 4.93 4.692zm-21.412 0h7.097c3.287 0 4.955-1.572 4.955-4.692V21.475c0-3.12-1.668-4.717-4.955-4.717h-7.097c-3.264 0-4.955 1.596-4.955 4.717v27.677c0 3.12 1.691 4.692 4.955 4.692zm-21.413 0h7.074c3.287 0 4.978-1.572 4.978-4.692V28.406c0-3.12-1.691-4.716-4.978-4.716H7.1c-3.264 0-4.955 1.596-4.955 4.716v20.746c0 3.12 1.691 4.692 4.955 4.692z"></path></svg>
+                    </div>
+                    <div class="data-info">
+                        <h6>Usage Data</h6>
+                        <p>Other Usage Data</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="context d-flex" style="justify-content: space-between;">
+        <div class="paragraph">
+            <p style="max-width: 900px; font-size: 0.8rem;">The latest update brings you SimCast Live, introduces new ranks and rewards for MyCOURT 3v3 PVP, showcases fresh All-Star gear in MyCAREER, bug fixes, updates the roster, and unveils 8 additional "Greatest of All-Time" NBA players, featuring Shaquille O'Neal, Joel Embiid, Michael Jordan, Donovan Mitchell, Penny Hardaway, Tyrese Haliburton, David Robinson, and Domantas Sabonis.</p>
+        </div>
+        <div class="version">
+            <p>Version 1.2</p>
+        </div>
+    </div>
+
+    <div class="data">
+        <div class="privacy-content d-flex">
+
+            <div class="profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><path d="M7.36 17l3.208 3.208A24.23 24.23 0 007.39 32.235c0 13.44 10.93 24.374 24.366 24.374 4.374 0 8.483-1.159 12.035-3.186L47 56.631A28.616 28.616 0 0131.756 61C15.874 61 3 48.122 3 32.235A28.637 28.637 0 017.36 17zM9.77 6.642l47.588 47.606a2.204 2.204 0 010 3.11 2.206 2.206 0 01-3.111 0L6.632 9.753c-.829-.8-.856-2.283 0-3.11.826-.828 2.253-.886 3.138 0zM32.238 3C48.123 3 61 15.878 61 31.761c0 5.597-1.599 10.82-4.364 15.239l-3.208-3.209a24.221 24.221 0 003.182-12.03c0-13.437-10.934-24.37-24.372-24.37a24.223 24.223 0 00-12.03 3.18L17 7.363A28.628 28.628 0 0132.238 3zm-7.492 31L36 45H18.373C17.44 45 17 44.418 17 43.572c0-2.224 2.5-7.11 7.746-9.572zm6.915-20C35.733 14 39 17.634 39 22.002c0 2.419-.874 4.529-2.281 5.998L26 16.923C27.343 15.145 29.376 14 31.661 14z"></path></svg>
+            </div>
+            <div class="data-state">
+                <h3>Data Not Linked to You</h3>
+            </div>
+            <div class="paragraph">
+                <p>The following data, which may be collected but is not linked to your identity, may be used for following purposes: </p>
+            </div>
+        </div>
+        <div class="analytics analytics-content">
+            <div class="title">
+                <h5>Analytics</h5>
+            </div>
+            <div class="info-wrapper d-flex" style="justify-content: center;">
+                <div class="data-logo">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" class="privacy-type__glyph privacy-type__glyph--usage-data" aria-hidden="true"><path d="M49.925 53.844h7.098c3.287 0 4.978-1.572 4.978-4.692V14.52c0-3.12-1.69-4.717-4.978-4.717h-7.098c-3.239 0-4.93 1.596-4.93 4.717v34.632c0 3.12 1.691 4.692 4.93 4.692zm-21.412 0h7.097c3.287 0 4.955-1.572 4.955-4.692V21.475c0-3.12-1.668-4.717-4.955-4.717h-7.097c-3.264 0-4.955 1.596-4.955 4.717v27.677c0 3.12 1.691 4.692 4.955 4.692zm-21.413 0h7.074c3.287 0 4.978-1.572 4.978-4.692V28.406c0-3.12-1.691-4.716-4.978-4.716H7.1c-3.264 0-4.955 1.596-4.955 4.716v20.746c0 3.12 1.691 4.692 4.955 4.692z"></path></svg>
+                </div>
+                <div class="data-info">
+                    <h6>Usage Data</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-banner" style="background-color: white; margin-top: 10px;">
+        <p style="text-align: start;">Privacy practices may vary, for example, based on the features you use or your age. <span class="more">Learn More</span></p>
+    </div>
+</section>
+
+<script src="header.js"></script>
+<script>
+    function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+    }
+    var modalElement1 = document.getElementById('exampleModal');
+    var modalElement2 = document.getElementById('exampleModal-privacy');
+    var modalInstance1 = new bootstrap.Modal(modalElement1);
+    var modalInstance2 = new bootstrap.Modal(modalElement2);
+
+    const arcadeLogo = document.querySelector('.apple-arcade')
+
+    window.addEventListener('scroll', function() {
+        const triggerPoint = 100;
+    })
+</script>
+
+<style>
+    body {
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    }
+    * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+    }
+    }
+    body {
+    background-color: white;
+    }
+
+    header {
+    position: static;
+    filter: blur(0.03rem);
+    }
+
+    .subheader {
+    filter: blur(0.03rem);
+    background-color: rgb(255, 255, 255, 0.9);
+    justify-content: space-around !important;
+    }
+
+    .appstore-button {
+    box-shadow: none;
+    border: 1px solid #0070c9;
+    background-color: white;
+    border-radius: 5px;
+    color: #0070c9;
+    padding: 2px;
+    }
+
+    .preview * {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    }
+    .game-ad {
+    background-color: black;
+    border-radius: 10px;
+    justify-content: space-between;
+    background: url("https://apps.apple.com/assets/images/arcade/upsell/banner-980@2x_LTR-5c84ccc9d203d5d0d45d6111807a7a37.jpg");
+    background-position: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 152px;
+    .content-title h4 {
+        color: white;
+    }
+    a {
+        text-decoration: none;
+    }
+    }
+
+    .content-banner {
+    background-color: #f2f8fc;
+    border-radius: 10px;
+    p {
+        align-items: center;
+        text-align: center;
+    }
+    }
+    .game-info {
+    border-bottom: 1px solid #d6d6d6;
+    }
+    .game-title{
+        h3{
+            font-size: 1.3rem;
+        }
+    }
+
+    .screenshots-container {
+    display: flex;
+    height: 210px;
+    max-width: fit-content;
+    overflow-x: auto;
+    }
+    .screen {
+    margin-right: 5px;
+    }
+    .read-more {
+    margin-top: 20px;
+    text-align: start;
+    border-top: 1px solid #d6d6d6;
+    }
+    .read-more p {
+        max-width: 513px;
+        font-size: .9rem;
+    }
+
+    .data-info *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .data-info{
+        margin-top: 5px;
+    }
+
+    .alert-content{
+        border-top: 1px solid #d6d6d6; 
+        flex-direction: column;
+    }
+    .data{
+        max-width: 490px;
+        border-radius: 20px;
+        background-color: #f8f8f8;
+        padding: 10px;
+    }
+    .privacy-content {
+        flex-direction: column;
+    }
+    .privacy-content * {
+        text-align: center;
+    }
+    .analytics-content .title h5{
+        text-align: center;
+    }
+    /* media quary */
+    
+    @media screen and (max-width: 734px) {
+    .screenshots-container {
+        height: 403px;
+        overflow-x: auto;
+    }
+    .screenshots-container img {
+        width: 469px;
+    }
+    .game-ad {
+        background: url("https://apps.apple.com/assets/images/arcade/upsell/banner-692@1x_LTR-d2c79d3bb0116d6692386c35272bc121.jpg");
+        background-position: right;
+        background-size: cover;
+    }
+}
+.more{
+    color: #0070c9; cursor: pointer;
+}
+    @media screen and (max-width: 575px) {
+    .game-ad {
+        border-radius: 0%;
+    }
+    .context{
+        flex-direction: column-reverse;
+    }
+
+    .modal-content{
+        border-radius: 20px !important;
+        outline: none !important;
+    }
+
+    }
+    @media screen and (max-width : 830px){
+        .hover-container{
+            display: none !important;
+        }
+    }
+</style>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+></script>
+</body>
+</html>

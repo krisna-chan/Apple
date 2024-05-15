@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "Luck/Yun-Chankrisna/Apple-Clone"
+REPOSITORY_TYPE = "git"
+BRANCH = "main"
+LAND_DEST_BRANCH = "main"

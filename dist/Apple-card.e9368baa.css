@@ -1,0 +1,76 @@
+/* ==============GLOBAL SECTION==================== */
+
+*{
+    text-align: center;
+}
+
+.plus-sign{
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 40px;
+}
+
+
+
+
+
+
+
+/* =============HERO SECTION================== */
+.hero-background{
+    background: url("/photo-1614851099362-9adf73ccebe9.8adc9368.avif");
+    background-position: center;
+    background-size: cover;
+    .img-container-hero{
+        margin-top: 100px;
+    }
+}
+
+.content-paragraph{
+    font-size: 1.6rem;
+    text-align:center;
+    margin: auto;
+    font-weight: 600;
+    padding: 20px;
+    margin-top: 30px;
+}
+.hero-logo{
+    width: 100px;
+    margin: auto;
+}
+
+.hero-header{
+    h1{
+        font-size: 4rem;
+    }
+}
+.img-hero{
+    margin-top: 50px;
+}
+
+
+/* card section */
+
+.card{
+    border: 1px;
+    h2{
+        margin-left: calc(50% + 14px);
+    }
+    h3{
+        bottom: 7%;
+        text-align: start;
+        position: absolute;
+        color: #a4f07e;
+    }
+    .dollar-sign{
+        margin-right: -50%;
+    }
+    .iphone-card{
+        h2{
+            left : 0px ;
+        }
+    }
+}
+
+/*# sourceMappingURL=/Apple-card.e9368baa.css.map */
