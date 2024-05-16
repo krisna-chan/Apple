@@ -142,3 +142,7 @@ li{
 .card-body{
     text-align: start;
 }
+
+.trade-section{
+    border-radius: 20px;
+}   
