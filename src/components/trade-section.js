@@ -52,4 +52,3 @@ addTradeInSection('iPad', {
         {name : 'Mac', value : '$100-$200'},
     ]
 }, 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphones-value-tradein-202309_GEO_US?wid=460&hei=458&fmt=png-alpha&.v=1693339715015');
-
