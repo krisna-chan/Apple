@@ -124,6 +124,27 @@
     background-size: cover;
     height: 620px;
 }
+
+.trading-section {
+  max-width: 980px;
+}
+
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+@media (max-width: 734px) {
+  .card {
+    flex-direction: column !important;
+  }
+  .card *{
+    font-size:1.2rem;
+  }
+}
+.card{
+  flex-direction: row-reverse;
+  border:1px;
+  border-radius: 20px !important;
+}
 </style>
 </head>
 
@@ -131,17 +152,45 @@
 
 
   <!-- mininize -->
-  <div class="container d-flex justify-content-center m-auto px-5">
+    <div class="trading-section container d-flex m-auto px-5"
+    style=" max-width: 980px;">
 
-    <div class="card" data-url="#"
-      data-imgSrc="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watches-value-tradein-202309?wid=780&hei=708&fmt=png-alpha&.v=1701363689556"
-      data-title="$70-$360" data-price-item="Apple watch" data-price-range="Up to $360"
-      data-device-v1="Apple Watch Ultra" data-v1-price="$360" data-device-v2="Apple Watch Series 8" data-v2-price="$165"
-      data-device-v3="Apple Watch SE(2nd generation)" data-v3-price="$110" data-device-v4="Apple Watch Series 7"
+    <div
+      class="card w-100 bg-whitesmoke" data-url="#" 
+      data-imgSrc="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphones-value-tradein-202309_GEO_US?wid=780&hei=708&fmt=png-alpha&.v=1693339715015"
+      data-price-estimate="$30-$630"
+      data-price-item= "iPhone"
+      data-device-v1="iPhone 14 Pro Max" 
+      data-v1-price="$630-$700" 
+      data-device-v2="iPhone 14 Pro" 
+      data-v2-price="$550-$600"
+      data-device-v3="iPhone 14 Plus" 
+      data-v3-price="$400-$450" 
+      data-device-v4="iPhone 14"
+      data-v4-price="$300-$350">
+    </div>
+
+  </div>
+  <div class="container trading-section d-flex m-auto px-5">
+
+    <div
+      class="card w-100 bg-whitesmoke" data-url="#"
+      data-imgSrc="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watches-value-tradein-202309?wid=780&hei=640&fmt=png-alpha&.v=1701363689556"
+      data-price-estimate="$70-$360"
+      data-price-item="Apple watch" 
+      data-price-range="Up to $360"
+      data-device-v1="Apple Watch Ultra" 
+      data-v1-price="$360" 
+      data-device-v2="Apple Watch Series 8" 
+      data-v2-price="$165"
+      data-device-v3="Apple Watch SE(2nd generation)" 
+      data-v3-price="$110" 
+      data-device-v4="Apple Watch Series 7"
       data-v4-price="$140">
     </div>
 
   </div>
+
 
   <script>
     // MINIMIZE
@@ -153,13 +202,17 @@
       image.classList.add("image-container", "m-auto");
       const source = card.getAttribute("data-imgSrc");
       image.innerHTML = `
-      <img class="img-top" src=${source}>
+      <div class="image-container m-auto">
+        <div class = "img"  style= "max-width: 640px; max-height: 455px; ">
+          <img style= "width: 100% ; height: 100%;" class="img-top ; overflow-y: hidden;" src=${source}>
+          </div>
+      </div>
       `;
       card.appendChild(image);
 
       const productPriceInfo = document.createElement('div');
       productPriceInfo.classList.add("trading-value");
-      const productTitle = card.getAttribute("data-title");
+      const productTitle = card.getAttribute("data-price-estimate");
       // optional: reduce html size
 
 
@@ -177,9 +230,14 @@
       const device4Price = card.getAttribute("data-v4-price");
 
       productPriceInfo.innerHTML = `
-      <h1 class="title" style = "color: gray" >Get <span style = "color: black">${productTitle}</span> When you trade in an <span style = "color: black">${productName}</span></h1>
-      <div class="price-range">
-                        <div class="price"> 
+      <div class="trade trading-value">
+                    <div class="title">
+                        <h1 class="trading-price-title text-secondary">
+                            Get <span class="text-dark">${productTitle}</span> when you trade in a <span class="text-dark">${productName}</span>.
+                        </h1>
+                    </div>
+                    <div class="price-price-range">
+                        <div class="price">
                             <div class="item-title">
                                 <h3 class="your-device" >
                                     Your device
@@ -193,7 +251,7 @@
                         </div>
                         <div class="price">
                             <div class="item-title">
-                                <h3>${device1} </h3>
+                                <h3>${device1}</h3>
                             </div>
                             <div class="price-range">
                                 <h3>Up to ${device1Price}</h3>
@@ -212,7 +270,7 @@
                                 <h3>${device3}</h3>
                             </div>
                             <div class="price-range">
-                                <h3>Up to ${device3Price} </h3>
+                                <h3>Up to ${device3Price}</h3>
                             </div>
                         </div>
                         <div class="price">
@@ -224,6 +282,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="all-value">
+                        <a href="#" >See all ${productName} values ⊕</a>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-primary">Find all your trade-in
+                          values</a>
+                    </div>
+                </div>
       `
 
       // insert product info
