@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
+  <title>Components</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/trading.css">
+
+
+  <style>
+    .hero-container {
+        margin-top: 100px;
+    }
+
+    .hover-content * {
+        font-size: small;
+    }
+
+    .hero-container {
+        max-width: 980px;
+    }
+
+
+.hero-container {
+    margin-top: 100px;
+}
+
+
+.content.d-flex,
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.content.d-flex {
+    text-align: center;
+}
+
+.product-item-titles.overflow-x-auto {
+    max-width: 980px;
+}
+
+.trade-section {
+    display: flex;
+    justify-content: center;
+    border: 1px;
+    
+    background-color: whitesmoke;
+}
+
+.trade.trading-value,
+.trade.trade-item-title.d-flex {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container.d-flex.p-3 {
+    display: flex;
+    padding: 3px;
+}
+
+.price-price-range .price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.your-device,
+.price-range h3 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.container-fluid {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.nav.nav-pills.nav-fill.gap-1.p-1.lg.rounded-5.shadow-sm {
+    --bs-nav-link-color: var(--bs-black);
+    --bs-nav-pills-link-active-color: var(--bs-white);
+    --bs-nav-pills-link-active-bg: var(--bs-black);
+}
+
+.card-group .card {
+    margin-right: 5px;
+}
+
+.title-header,
+.sub-header h2 {
+    text-align: center;
+}
+
+.sub-header h2 {
+    font-weight: 300;
+}
+
+.title-question.container,
+/* .container {
+    max-width: 940px;
+} */
+
+.comment .card {
+    margin: auto;
+    border-radius: 10px;
+    border: 1px;
+    max-width: 540px;
+}
+
+.answer.col {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px;
+    margin: auto;
+}
+
+.card.card-img-top {
+    background-position: center;
+    background-size: cover;
+    height: 620px;
+}
+</style>
+</head>
+
+<body>
+
+
+  <!-- mininize -->
+  <div class="container d-flex justify-content-center m-auto px-5">
+
+    <div class="card" data-url="#"
+      data-imgSrc="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watches-value-tradein-202309?wid=780&hei=708&fmt=png-alpha&.v=1701363689556"
+      data-title="$70-$360" data-price-item="Apple watch" data-price-range="Up to $360"
+      data-device-v1="Apple Watch Ultra" data-v1-price="$360" data-device-v2="Apple Watch Series 8" data-v2-price="$165"
+      data-device-v3="Apple Watch SE(2nd generation)" data-v3-price="$110" data-device-v4="Apple Watch Series 7"
+      data-v4-price="$140">
+    </div>
+
+  </div>
+
+  <script>
+    // MINIMIZE
+    // ------------- CARD ---------------- //
+    document.querySelectorAll(".card").forEach((card) => {
+
+      // image elements
+      const image = document.createElement("div");
+      image.classList.add("image-container", "m-auto");
+      const source = card.getAttribute("data-imgSrc");
+      image.innerHTML = `
+      <img class="img-top" src=${source}>
+      `;
+      card.appendChild(image);
+
+      const productPriceInfo = document.createElement('div');
+      productPriceInfo.classList.add("trading-value");
+      const productTitle = card.getAttribute("data-title");
+      // optional: reduce html size
+
+
+      card.removeAttribute("data-title");
+      const productPrice = card.getAttribute("data-price");
+      const productName = card.getAttribute("data-price-item");
+      const device1 = card.getAttribute("data-device-v1");
+      const device2 = card.getAttribute("data-device-v2");
+      const device3 = card.getAttribute("data-device-v3");
+      const device4 = card.getAttribute("data-device-v4");
+
+      const device1Price = card.getAttribute("data-v1-price");
+      const device2Price = card.getAttribute("data-v2-price");
+      const device3Price = card.getAttribute("data-v3-price");
+      const device4Price = card.getAttribute("data-v4-price");
+
+      productPriceInfo.innerHTML = `
+      <h1 class="title" style = "color: gray" >Get <span style = "color: black">${productTitle}</span> When you trade in an <span style = "color: black">${productName}</span></h1>
+      <div class="price-range">
+                        <div class="price"> 
+                            <div class="item-title">
+                                <h3 class="your-device" >
+                                    Your device
+                                </h3>
+                            </div>
+                            <div class="price-range">
+                                <h3 >
+                                    Estimated trade-in value
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="item-title">
+                                <h3>${device1} </h3>
+                            </div>
+                            <div class="price-range">
+                                <h3>Up to ${device1Price}</h3>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="item-title">
+                                <h3>${device2}</h3>
+                            </div>
+                            <div class="price-range">
+                                <h3>Up to ${device2Price}</h3>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="item-title">
+                                <h3>${device3}</h3>
+                            </div>
+                            <div class="price-range">
+                                <h3>Up to ${device3Price} </h3>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="item-title">
+                                <h3>${device4}</h3>
+                            </div>
+                            <div class="price-range">
+                                <h3>Up to ${device4Price}</h3>
+                            </div>
+                        </div>
+                    </div>
+      `
+
+      // insert product info
+      card.appendChild(productPriceInfo);
+    });
+    // ------------- END CARD ---------------- //
+  </script>
+
+  <!-- <script type="module" src="./component.js"></script> -->
+</body>
+
+</html>
